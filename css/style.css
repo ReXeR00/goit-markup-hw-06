@@ -987,6 +987,9 @@ main {
   border-radius: 4px;
   padding: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .fieldset_comment {
@@ -998,6 +1001,9 @@ main {
   border-radius: 4px;
   padding: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .fieldset_comment:has(input:focus) {
