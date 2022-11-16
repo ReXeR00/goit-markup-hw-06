@@ -981,6 +981,7 @@ main {
 }
 
 .my_form .label {
+  cursor: pointer;
   position: absolute;
   top: -24px;
   font-size: 12px;
