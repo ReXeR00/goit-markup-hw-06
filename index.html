@@ -8,7 +8,7 @@
     <meta name="keywords" content="HTML" />
     <meta name="author" content="Emil Nowak" />
 
-    <link rel="stylesheet" href="./node_modules/modern-normalize/modern-normalize.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"> 
     <link href="./css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -300,26 +300,27 @@
 <h3 class="text_in_modal_window">
   Zostaw swoje dane w formularzu poniżej
 </h3>
+<button type="button" class="close-btn"  data-modal-close ><svg width="11" height="11"><use href="./images/icons.svg#Ex"></use></svg></button>
 </div>
   <form class="my_form">
     <fieldset class="fieldset">
     <label class="label">Imie</label>
-    <svg class="modal_icon_user"><use href="./images/icons.svg#user-icon"></use></svg>
-    <input class="input" type="name"/>
+    <svg class="modal_icon_user" width="12" height="12"><use href="./images/icons.svg#user-icon"></use></svg>
+    <input class="input" type="name" name="username" id="username" minlength="3"/>
   </fieldset>
 
   <fieldset class="fieldset">
     <label class="label">Telefon</label>
-    <svg class="modal_icon_phone"><use href="./images/icons.svg#phone"></use></svg>
+    <svg class="modal_icon_phone" width="13" height="13"><use href="./images/icons.svg#phone"></use></svg>
     <input class="input"
      type="tel"
- 
+      name="phone"
      />
   </fieldset>
 
   <fieldset class="fieldset">
     <label class="label" >Email</label>
-    <svg class="modal_icon_mail"><use href="./images/icons.svg#mail"></use></svg>
+    <svg class="modal_icon_mail" width="16" height="12"><use href="./images/icons.svg#mail"></use></svg>
     <input class="input" type="email" name="email"/>
   </fieldset>
 
@@ -329,16 +330,21 @@
   </fieldset>
 
   <label class="legal-checkbox">
-<input class="input_checkbox" type="checkbox" id="legal" />
+<input class="input_checkbox custom-input hidden" type="checkbox" id="consent" name="consent" value="zgody" required  />
 <p>Oświadczam iż akceptuję <span href="#" class="regulations"> Regulamin </span> i<span href="#" class="privacy_policy"> Politykę Prywatności.</span></p>
   </label>
   <button class="modal_button" type="button">Wyślij</button>
-  </form>
- <button type="button" class="close-btn"  data-modal-close ><svg width="11" height="11"><use href="./images/icons.svg#Ex"></use></svg></button>
+
+
+</form>
 </div>
 </div>
 
 <script src="./js/modal.js"></script>
+
+  </body>
+</html>
+
 
   </body>
 </html>
