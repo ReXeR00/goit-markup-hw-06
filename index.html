@@ -304,29 +304,30 @@
 </div>
   <form class="my_form">
     <fieldset class="fieldset">
-    <label class="label">Imie</label>
+    <label class="label" for="name">Imie</label>
     <svg class="modal_icon_user" width="12" height="12"><use href="./images/icons.svg#user-icon"></use></svg>
-    <input class="input" type="name" name="username" id="username" minlength="3"/>
+    <input class="input" type="name" name="name" id="name" minlength="3"/>
   </fieldset>
 
   <fieldset class="fieldset">
-    <label class="label">Telefon</label>
+    <label class="label" for="phone">Telefon</label>
     <svg class="modal_icon_phone" width="13" height="13"><use href="./images/icons.svg#phone"></use></svg>
     <input class="input"
      type="tel"
       name="phone"
+      id="phone"
      />
   </fieldset>
 
   <fieldset class="fieldset">
-    <label class="label" >Email</label>
+    <label class="label" for="mail">Email</label>
     <svg class="modal_icon_mail" width="16" height="12"><use href="./images/icons.svg#mail"></use></svg>
-    <input class="input" type="email" name="email"/>
+    <input class="input" type="email" name="email" id="mail"/>
   </fieldset>
 
   <fieldset class="fieldset_comment">
-    <label class="label">Komentarz</label>
-    <textarea name="textarea" class="text-area" type="text" placeholder="Wprowadź tekst" spellcheck="true"  maxlength="100"></textarea>
+    <label class="label" for="comment">Komentarz</label>
+    <textarea name="textarea" id="comment" class="text-area" type="text" placeholder="Wprowadź tekst" spellcheck="true"  maxlength="100"></textarea>
   </fieldset>
 
   <label class="legal-checkbox">
